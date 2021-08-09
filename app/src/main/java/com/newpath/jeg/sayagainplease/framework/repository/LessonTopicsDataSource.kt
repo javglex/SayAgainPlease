@@ -3,7 +3,7 @@ package com.newpath.jeg.sayagainplease.framework.repository
 import com.newpath.jeg.core.data.LessonTopic
 import com.newpath.jeg.core.repository.LessonTopicDataSource
 
-class LessonTopicsDataSource: LessonTopicDataSource {
+class LessonTopicsDataSource : LessonTopicDataSource {
     override suspend fun getAll(): List<LessonTopic> {
 
         return arrayListOf(
@@ -12,6 +12,6 @@ class LessonTopicsDataSource: LessonTopicDataSource {
             LessonTopic(2, "Flight plan", "Open or close flight plans"),
             LessonTopic(3, "Untowered airports", "Talk to other pylots"),
             LessonTopic(4, "Towered airports", "Argue with some guy without radar")
-        );
+        )
     }
 }

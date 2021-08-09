@@ -7,12 +7,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.newpath.jeg.sayagainplease.R
 import com.newpath.jeg.sayagainplease.presentation.listeners.ItemListAction
 
-class LessonCatalogAdapter(val clickAction: ItemListAction): RecyclerView.Adapter<LessonCatalogAdapter.ViewHolder>() {
+class LessonCatalogAdapter(val clickAction: ItemListAction) : RecyclerView.Adapter<LessonCatalogAdapter.ViewHolder>() {
 
     private val lessons: ArrayList<String> = ArrayList<String>()
 
     public fun updateLessons() {
-        //TODO: update lesson list
+        // TODO: update lesson list
         notifyDataSetChanged()
     }
 
@@ -34,12 +34,9 @@ class LessonCatalogAdapter(val clickAction: ItemListAction): RecyclerView.Adapte
         return lessons?.size
     }
 
-    inner class ViewHolder(view: View): RecyclerView.ViewHolder(view) {
+    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         fun bind() {
-
         }
     }
-
-
 }

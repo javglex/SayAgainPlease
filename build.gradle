@@ -8,12 +8,15 @@ buildscript {
 
     repositories {
         google()
+        maven { url 'https://plugins.gradle.org/m2/'}
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:7.0.0'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$safe_args_version"
+        classpath 'org.jlleitschuh.gradle:ktlint-gradle:10.1.0'
+
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }
@@ -23,6 +26,22 @@ allprojects {
     repositories {
         google()
         jcenter()
+    }
+    apply plugin: "org.jlleitschuh.gradle.ktlint"
+    ktlint {
+        version = "0.42.0" // the version of ktlint that ktlint-gradle will use
+        // For a list of all standard ktlint rules: https://github.com/pinterest/ktlint#standard-rules
+        outputToConsole = true
+        ignoreFailures = false
+        reporters {
+            android = true
+            coloredOutput = false
+        }
+        // Seems like ktlint uses a lot of memory.  Without this, will get heap space failures on Circle CI
+        // https://github.com/JLLeitschuh/ktlint-gradle/issues/507
+        tasks.withType(org.jlleitschuh.gradle.ktlint.tasks.BaseKtLintCheckTask).configureEach {
+            it.workerMaxHeapSize.set("512m")
+        }
     }
 }
 

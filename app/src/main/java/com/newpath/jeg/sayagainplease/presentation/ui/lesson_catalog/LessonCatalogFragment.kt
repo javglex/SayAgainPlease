@@ -42,12 +42,9 @@ class LessonCatalogFragment : Fragment(), ItemListAction {
         binding.tvTopicTitle.text = "Topic: $topicId"
 
         return binding.root
-
     }
-
 
     override fun onClick(id: Long) {
         TODO("Not yet implemented")
     }
-
 }
