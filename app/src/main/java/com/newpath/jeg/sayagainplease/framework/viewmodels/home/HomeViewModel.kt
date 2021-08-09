@@ -4,17 +4,16 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import com.newpath.jeg.core.data.LessonTopic
 import com.newpath.jeg.sayagainplease.framework.di.ApplicationModule
 import com.newpath.jeg.sayagainplease.framework.di.DaggerViewModelComponent
 import com.newpath.jeg.sayagainplease.framework.repository.LessonTopicsDataSource
+import javax.inject.Inject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
-class HomeViewModel(application: Application) : AndroidViewModel(application){
+class HomeViewModel(application: Application) : AndroidViewModel(application) {
 
     @Inject
     lateinit var dataSource: LessonTopicsDataSource
@@ -34,5 +33,4 @@ class HomeViewModel(application: Application) : AndroidViewModel(application){
             _topics.postValue(listTopics)
         }
     }
-
 }

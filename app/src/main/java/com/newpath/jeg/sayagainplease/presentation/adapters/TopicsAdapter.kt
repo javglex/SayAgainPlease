@@ -9,8 +9,7 @@ import com.newpath.jeg.core.data.LessonTopic
 import com.newpath.jeg.sayagainplease.R
 import com.newpath.jeg.sayagainplease.presentation.listeners.ItemListAction
 
-
-class TopicsAdapter(val clickAction: ItemListAction): RecyclerView.Adapter<TopicsAdapter.ViewHolder>() {
+class TopicsAdapter(val clickAction: ItemListAction) : RecyclerView.Adapter<TopicsAdapter.ViewHolder>() {
 
     private val topics: ArrayList<LessonTopic> = ArrayList<LessonTopic>()
 
@@ -22,7 +21,7 @@ class TopicsAdapter(val clickAction: ItemListAction): RecyclerView.Adapter<Topic
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): ViewHolder {
         val view: View = LayoutInflater.from(viewGroup.context)
-                .inflate(R.layout.item_home_topic, viewGroup, false)
+            .inflate(R.layout.item_home_topic, viewGroup, false)
 
         return ViewHolder(view)
     }
@@ -48,9 +47,6 @@ class TopicsAdapter(val clickAction: ItemListAction): RecyclerView.Adapter<Topic
             layout.setOnClickListener {
                 clickAction.onClick(topic.id)
             }
-
         }
-
     }
-
 }

@@ -1,0 +1,5 @@
+# Please see https://github.com/pinterest/ktlint#editorconfig for more information
+[*.{kt,kts}]
+
+# The default behavior is "off"
+max_line_length=140
