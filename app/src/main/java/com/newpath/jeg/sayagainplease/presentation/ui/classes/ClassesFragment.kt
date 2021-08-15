@@ -1,4 +1,4 @@
-package com.newpath.jeg.sayagainplease.presentation.ui.gallery
+package com.newpath.jeg.sayagainplease.presentation.ui.classes
 
 import android.os.Bundle
 import android.util.Log
@@ -12,9 +12,11 @@ import androidx.navigation.NavDirections
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import com.newpath.jeg.sayagainplease.databinding.FragmentClassesBinding
-import com.newpath.jeg.sayagainplease.presentation.adapters.TopicsAdapter
 import com.newpath.jeg.sayagainplease.presentation.listeners.ItemListAction
 
+/**
+ * Diplays lesson topics, such as Landing, Flight Following, Take-off etc
+ */
 class ClassesFragment : Fragment(), ItemListAction {
     private val TAG: String = "ClassesFragment"
     private lateinit var classesViewModel: ClassesViewModel
@@ -49,7 +51,7 @@ class ClassesFragment : Fragment(), ItemListAction {
     }
 
     override fun onClick(id: Long) {
-        Log.d(TAG, "note with ID $id clicked")
+        Log.d(TAG, "lesson with ID $id clicked")
         goToListDetails(id)
     }
 

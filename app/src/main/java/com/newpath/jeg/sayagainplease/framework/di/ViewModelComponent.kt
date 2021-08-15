@@ -1,6 +1,6 @@
 package com.newpath.jeg.sayagainplease.framework.di
 
-import com.newpath.jeg.sayagainplease.presentation.ui.gallery.ClassesViewModel
+import com.newpath.jeg.sayagainplease.presentation.ui.classes.ClassesViewModel
 import com.newpath.jeg.sayagainplease.presentation.ui.home.HomeViewModel
 import dagger.Component
 

@@ -1,4 +1,4 @@
-package com.newpath.jeg.sayagainplease.presentation.adapters
+package com.newpath.jeg.sayagainplease.presentation.ui.classes
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup

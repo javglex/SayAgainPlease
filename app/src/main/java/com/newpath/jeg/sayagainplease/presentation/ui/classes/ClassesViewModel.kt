@@ -1,4 +1,4 @@
-package com.newpath.jeg.sayagainplease.presentation.ui.gallery
+package com.newpath.jeg.sayagainplease.presentation.ui.classes
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel

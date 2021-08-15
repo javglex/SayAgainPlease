@@ -11,7 +11,7 @@
         android:layout_height="wrap_content">
 
         <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/fragmentContainerView"
+            android:id="@+id/greet_fragment_container"
             android:name="com.newpath.jeg.sayagainplease.presentation.ui.home.sections.greet.GreetSectionFragment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -19,5 +19,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:layout="@layout/fragment_greet_section" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/recommended_fragment_container"
+            android:name="com.newpath.jeg.sayagainplease.presentation.ui.home.sections.recommended.RecommendedSectionFragment"
+            android:layout_width="0dp"
+            android:layout_height="440dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/greet_fragment_container" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
