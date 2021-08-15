@@ -11,4 +11,11 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="empty">Empty</string>
+    <string name="greet_user_placeholder">Hello, Javier. You have completed 2 lessons this week!</string>
+    <plurals name="greet_user_completed">
+        <item quantity="one">You have completed %1$d lesson this week!</item>
+        <item quantity="other">You have completed %1$d lessons this week!</item>
+    </plurals>
+    <string name="greet_user_name">Hello, %1$s.</string>
+
 </resources>

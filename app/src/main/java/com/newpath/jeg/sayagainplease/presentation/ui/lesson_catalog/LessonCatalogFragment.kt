@@ -8,7 +8,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.newpath.jeg.sayagainplease.databinding.FragmentLessonCatalogBinding
-import com.newpath.jeg.sayagainplease.framework.viewmodels.LessonCatalogViewModel
 import com.newpath.jeg.sayagainplease.presentation.adapters.LessonCatalogAdapter
 import com.newpath.jeg.sayagainplease.presentation.listeners.ItemListAction
 

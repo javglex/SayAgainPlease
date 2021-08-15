@@ -9,7 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.newpath.jeg.sayagainplease.R
-import com.newpath.jeg.sayagainplease.framework.viewmodels.SlideshowViewModel
 
 class SlideshowFragment : Fragment() {
 

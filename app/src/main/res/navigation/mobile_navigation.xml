@@ -9,17 +9,7 @@
         android:id="@+id/nav_home"
         android:name="com.newpath.jeg.sayagainplease.presentation.ui.home.HomeFragment"
         android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home">
-        <action
-            android:id="@+id/action_nav_home_to_lessonCatalogFragment"
-            app:destination="@id/lessonCatalogFragment" />
-    </fragment>
-
-    <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.newpath.jeg.sayagainplease.presentation.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_home"/>
 
     <fragment
         android:id="@+id/nav_slideshow"
@@ -35,5 +25,13 @@
             android:name="topic_id"
             app:argType="long"
             android:defaultValue="-1L" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_classes"
+        android:name="com.newpath.jeg.sayagainplease.presentation.ui.gallery.ClassesFragment"
+        android:label="ClassesFragment" >
+        <action
+            android:id="@+id/action_classesFragment_to_lessonCatalogFragment"
+            app:destination="@id/lessonCatalogFragment" />
     </fragment>
 </navigation>
