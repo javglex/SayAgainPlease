@@ -22,6 +22,7 @@ class HomeFragment() : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
+
         homeViewModel =
             ViewModelProvider(this).get(HomeViewModel::class.java)
 
