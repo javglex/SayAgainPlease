@@ -5,11 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.newpath.jeg.sayagainplease.databinding.FragmentHomeBinding
 import com.newpath.jeg.sayagainplease.databinding.FragmentRecommendedSectionBinding
-import com.newpath.jeg.sayagainplease.presentation.ui.home.HomeViewModel
 
 class RecommendedSectionFragment : Fragment() {
 
@@ -32,5 +29,4 @@ class RecommendedSectionFragment : Fragment() {
 
         return binding.root
     }
-
 }
