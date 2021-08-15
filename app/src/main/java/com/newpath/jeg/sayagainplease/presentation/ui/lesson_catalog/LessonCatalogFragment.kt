@@ -10,6 +10,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.newpath.jeg.sayagainplease.databinding.FragmentLessonCatalogBinding
 import com.newpath.jeg.sayagainplease.presentation.listeners.ItemListAction
 
+/**
+ * Diplays lessons for a topic/class type selected
+ */
 class LessonCatalogFragment : Fragment(), ItemListAction {
 
     private val TAG: String = "LessonCatalogFragment"

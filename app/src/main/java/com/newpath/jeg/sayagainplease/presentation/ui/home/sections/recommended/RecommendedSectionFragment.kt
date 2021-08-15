@@ -8,6 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.newpath.jeg.sayagainplease.databinding.FragmentRecommendedSectionBinding
 
+/**
+ * Displays the recommended lessons section in the home page
+ */
 class RecommendedSectionFragment : Fragment() {
 
     private val TAG: String = "RecommendedSectionFragment"

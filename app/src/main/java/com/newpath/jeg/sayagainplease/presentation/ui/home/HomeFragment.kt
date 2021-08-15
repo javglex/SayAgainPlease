@@ -9,6 +9,10 @@ import androidx.lifecycle.ViewModelProvider
 import com.newpath.jeg.sayagainplease.databinding.FragmentHomeBinding
 import com.newpath.jeg.sayagainplease.presentation.ui.classes.TopicsAdapter
 
+/**
+ * First UI user see's when app is opened
+ * Contains different sections which greet the user, recommend them lessons and more
+ */
 class HomeFragment : Fragment() {
 
     private val TAG: String = "HomeFragment"
