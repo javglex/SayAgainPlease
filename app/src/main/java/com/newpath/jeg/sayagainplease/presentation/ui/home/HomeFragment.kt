@@ -7,9 +7,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.newpath.jeg.sayagainplease.databinding.FragmentHomeBinding
-import com.newpath.jeg.sayagainplease.presentation.adapters.TopicsAdapter
+import com.newpath.jeg.sayagainplease.presentation.ui.classes.TopicsAdapter
 
-class HomeFragment() : Fragment() {
+class HomeFragment : Fragment() {
 
     private val TAG: String = "HomeFragment"
     private lateinit var homeViewModel: HomeViewModel

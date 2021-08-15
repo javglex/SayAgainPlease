@@ -1,4 +1,4 @@
-package com.newpath.jeg.sayagainplease.presentation.ui.gallery
+package com.newpath.jeg.sayagainplease.presentation.ui.classes
 
 import android.os.Bundle
 import android.util.Log
@@ -12,7 +12,6 @@ import androidx.navigation.NavDirections
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import com.newpath.jeg.sayagainplease.databinding.FragmentClassesBinding
-import com.newpath.jeg.sayagainplease.presentation.adapters.TopicsAdapter
 import com.newpath.jeg.sayagainplease.presentation.listeners.ItemListAction
 
 class ClassesFragment : Fragment(), ItemListAction {

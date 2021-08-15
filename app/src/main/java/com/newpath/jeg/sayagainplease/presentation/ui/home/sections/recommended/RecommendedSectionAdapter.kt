@@ -1,13 +1,12 @@
-package com.newpath.jeg.sayagainplease.presentation.adapters
+package com.newpath.jeg.sayagainplease.presentation.ui.home.sections.recommended
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.newpath.jeg.sayagainplease.R
-import com.newpath.jeg.sayagainplease.presentation.listeners.ItemListAction
 
-class LessonCatalogAdapter(val clickAction: ItemListAction) : RecyclerView.Adapter<LessonCatalogAdapter.ViewHolder>() {
+class RecommendedSectionAdapter : RecyclerView.Adapter<RecommendedSectionAdapter.ViewHolder>() {
 
     private val lessons: ArrayList<String> = ArrayList<String>()
 
@@ -19,14 +18,14 @@ class LessonCatalogAdapter(val clickAction: ItemListAction) : RecyclerView.Adapt
     override fun onCreateViewHolder(
         viewGroup: ViewGroup,
         viewType: Int
-    ): LessonCatalogAdapter.ViewHolder {
+    ): ViewHolder {
         val view: View = LayoutInflater.from(viewGroup.context)
             .inflate(R.layout.item_home_topic, viewGroup, false)
 
         return ViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: LessonCatalogAdapter.ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.bind()
     }
 
