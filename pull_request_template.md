@@ -1,16 +1,16 @@
 [SAP-]https://skymonkeystudio.atlassian.net/browse/SAP-
 
-### Description
+## Description
 
 
-### Type of change
+## Type of change
 Bug
 
 Refactor
 
 Feature
 
-### Self-review checklist
+## Self-review checklist
 
 [ ] Tested on Emulator or Device
 
