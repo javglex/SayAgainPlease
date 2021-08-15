@@ -1,4 +1,4 @@
-package com.newpath.jeg.sayagainplease.framework.viewmodels.home
+package com.newpath.jeg.sayagainplease.presentation.ui.gallery
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -13,7 +13,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class HomeViewModel(application: Application) : AndroidViewModel(application) {
+class ClassesViewModel(application: Application) : AndroidViewModel(application) {
 
     @Inject
     lateinit var dataSource: LessonTopicsDataSource
