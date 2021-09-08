@@ -11,6 +11,9 @@ import com.skymonkey.studio.interfaces.VoiceSysCallback
 import com.skymonkey.studio.utils.PermissionsUtil
 import java.util.Locale
 
+/**
+ * Speech to text API entry to be used by other modules
+ */
 class VoiceSysAPI(private val activity: Activity) : RecognitionListener {
 
     private val TAG: String = "VoiceSysAPI"
