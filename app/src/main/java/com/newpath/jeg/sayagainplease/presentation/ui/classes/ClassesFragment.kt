@@ -13,6 +13,8 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import com.newpath.jeg.sayagainplease.databinding.FragmentClassesBinding
 import com.newpath.jeg.sayagainplease.presentation.listeners.ItemListAction
+import com.skymonkey.studio.VoiceSysAPI
+import com.skymonkey.studio.interfaces.VoiceSysCallback
 
 /**
  * Diplays lesson topics, such as Landing, Flight Following, Take-off etc
@@ -46,6 +48,21 @@ class ClassesFragment : Fragment(), ItemListAction {
                 topicsAdapter.updateTopics(it)
             }
         )
+
+        val tts = VoiceSysAPI(requireActivity())
+        tts.listen(object : VoiceSysCallback {
+            override fun listening() {
+                Log.d(TAG, "listening from class frag")
+            }
+
+            override fun onResults(results: ArrayList<String>?) {
+                Log.d(TAG, "results: $results")
+            }
+
+            override fun onError(error: Int) {
+                Log.e(TAG, "error: $error")
+            }
+        })
 
         return binding.root
     }
