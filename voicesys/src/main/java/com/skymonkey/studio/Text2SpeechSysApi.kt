@@ -8,6 +8,9 @@ import com.skymonkey.studio.interfaces.TextSysCallback
 import com.skymonkey.studio.models.UtteranceType
 import java.util.Locale
 
+/**
+ * Text to speech API to be used by other modules (main app)
+ */
 class Text2SpeechSysApi(context: Context, var mCallback: TextSysCallback) : TextToSpeech.OnInitListener, UtteranceProgressListener() {
 
     private var tts: TextToSpeech = TextToSpeech(context.applicationContext, this)
@@ -16,6 +19,10 @@ class Text2SpeechSysApi(context: Context, var mCallback: TextSysCallback) : Text
         const val TAG = "Text2SpeechSysApi"
     }
 
+    /**
+     * callback fires when TTS finished initializing
+     * @param status - Success, error etc
+     */
     override fun onInit(status: Int) {
         if (status != TextToSpeech.ERROR) {
             tts.language = Locale.US
@@ -25,6 +32,9 @@ class Text2SpeechSysApi(context: Context, var mCallback: TextSysCallback) : Text
         }
     }
 
+    /**
+     * pauses STT
+     */
     fun pause() {
         if (tts != null) {
             tts.stop()
@@ -32,6 +42,9 @@ class Text2SpeechSysApi(context: Context, var mCallback: TextSysCallback) : Text
         }
     }
 
+    /**
+     * Syntesizes text to voice. TTS must be initialized. Call after onInit callback fires.
+     */
     fun speak(text: String, utteranceType: UtteranceType? = null) {
         Log.d(TAG, "speak() called")
         tts.speak(text, TextToSpeech.QUEUE_FLUSH, null, utteranceType?.id)
