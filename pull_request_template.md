@@ -1,4 +1,4 @@
-[SAP-]https://skymonkeystudio.atlassian.net/browse/SAP-
+[SAP-](https://skymonkeystudio.atlassian.net/browse/SAP-)
 
 ## Description
 
