@@ -13,7 +13,7 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import com.newpath.jeg.sayagainplease.databinding.FragmentClassesBinding
 import com.newpath.jeg.sayagainplease.presentation.listeners.ItemListAction
-import com.skymonkey.studio.VoiceSysAPI
+import com.skymonkey.studio.Speech2TextSysAPI
 import com.skymonkey.studio.interfaces.VoiceSysCallback
 
 /**
@@ -49,7 +49,7 @@ class ClassesFragment : Fragment(), ItemListAction {
             }
         )
 
-        val tts = VoiceSysAPI(requireActivity())
+        val tts = Speech2TextSysAPI(requireActivity())
         tts.listen(object : VoiceSysCallback {
             override fun listening() {
                 Log.d(TAG, "listening from class frag")

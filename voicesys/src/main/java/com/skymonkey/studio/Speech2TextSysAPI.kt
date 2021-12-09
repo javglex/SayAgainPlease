@@ -14,7 +14,7 @@ import java.util.Locale
 /**
  * Speech to text API entry to be used by other modules
  */
-class VoiceSysAPI(private val activity: Activity) : RecognitionListener {
+class Speech2TextSysAPI(private val activity: Activity) : RecognitionListener {
 
     private val TAG: String = "VoiceSysAPI"
     private lateinit var mCallback: VoiceSysCallback
